@@ -1,0 +1,8 @@
+{
+    "programs":[
+        {"value":"Orientación vocacional","name":"Orientación vocacional"},
+        {"value":"Reorientación vocacional","name":"Reorientación vocacional"},
+        {"value":"Taller de matemáticas","name":"Taller de matemáticas"},
+        {"value":"Métodos de estudio","name":"Métodos de estudio"}
+    ]
+}
