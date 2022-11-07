@@ -17,6 +17,7 @@ function Select({ error, label, touched, ...props }) {
         } ${touched && !error ? 'bg-inputbackground' : ''} ${
           isGrayText ? 'text-gray-400' : ''
         }`}
+        /* eslint-disable react/jsx-props-no-spreading */
         {...props}
         onChange={(e) => {
           setIsGrayText(false);

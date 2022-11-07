@@ -11,6 +11,7 @@ function TextArea({ error, label, touched, ...props }) {
         className={`border-2 mobile:w-full max-w-[656px] p-2 rounded-lg ${
           error && touched ? 'border-red-500' : ''
         } ${!error && touched ? 'bg-inputbackground' : ''} focus:outline-green`}
+        /* eslint-disable react/jsx-props-no-spreading */
         {...props}
       />
       {error && touched ? (

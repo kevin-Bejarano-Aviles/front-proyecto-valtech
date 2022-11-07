@@ -7,10 +7,11 @@ function Button({
   disabled = false,
   classN = false,
 }) {
-  let size = classN
+  const size = classN
     ? 'text-xl tablet:text-lg tablet:h-10 tablet:w-[184px] h-16 w-[200px]'
     : 'text-sm w-[150px] mobile:text-base  h-10 mobile:w-[184px]';
-  let claseButon = ` rounded-lg flex justify-center items-center text-white font-medium  bg-green ${size}`;
+  const claseButon = ` rounded-lg flex justify-center items-center text-white font-medium  bg-green ${size}`;
+  /* eslint-disable react/jsx-no-useless-fragment */
   return (
     <>
       <button

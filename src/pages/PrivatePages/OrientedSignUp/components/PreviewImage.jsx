@@ -1,4 +1,4 @@
-import { useState,useRef } from "react";
+import { useState,useRef } from 'react';
 import addAvatar from '../../../../assets/icons/privatePage/add-avatar.svg';
 import iconPlus from '../../../../assets/icons/icon-plus.svg';
 
