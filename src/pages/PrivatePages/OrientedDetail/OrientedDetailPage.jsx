@@ -31,7 +31,7 @@ function Oriented() {
               </h2>
               <div className='flex-col gap-3 tablet:flex-row tablet:gap-9 flex'>
                 <img
-                  src={require(`../../../assets/students/${studentDetail.avatar}`)}
+                  src={`https://proyecto-academy.herokuapp.com/admin/images/${studentDetail.avatar}`}
                   alt='avatar'
                   className='w-[96px] h-[96px] rounded-full'
                 />

@@ -18,6 +18,7 @@ function useGet() {
   const [totalEventsGet, setTotalEventsGet] = useState();
   const [totalEvents, setTotalEvents] = useState();
   const [adviserDetail, setAdviserDetail] = useState();
+  const [imagenDetailStudent, setImagenStudent] = useState();
 
   const navigate = useNavigate();
 
@@ -77,7 +78,6 @@ function useGet() {
       }
     }
   };
-
   const getAllEvents = async (limit) => {
     try {
       const response = await axios(`${baseUrl}/events?from=${limit}&limit=8`, options);
@@ -146,7 +146,7 @@ function useGet() {
       const detailStudent = response.data.data.students;
       const lastUserId = detailStudent[detailStudent.length - 1].id;
       navigate(`/orientados/${lastUserId}`);
-      window.location.reload();
+      
     } catch (err) {
       const { status } = err.response;
       if (status === 401) {

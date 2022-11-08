@@ -14,11 +14,7 @@ export default function CardStudents({
       <div className='w-[178px] h-[178px] flex justify-center items-center laptop:border-r-[1px]  laptop:border-bordergray'>
         <img
           className='w-[140px] h-[140px] rounded-full'
-          src={
-            avatar
-              ? require(`../../../../assets/${ruta}/${avatar}`)
-              : 'https://i.imgur.com/b08hxPY.png'
-          }
+          src={`https://proyecto-academy.herokuapp.com/admin/images/${avatar}`}
           alt='avatar'
         />
       </div>
